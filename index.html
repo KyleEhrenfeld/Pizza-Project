@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kyle Ehrenfeld">
+    <meta name="description" content="">
+
+    <meta property="og:image" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+
+    <title>Pizza Gate</title>
+</head>
+
+
+<body>
+    <form action="data.json" method="POST">
+        <fieldset>
+        <legend> Order Form </legend>
+            <ul style="list-style-type: none;">
+
+                <fieldset> <legend> Order Form </legend>
+                    <li>User Name <input type="text" name="user.Name" id="user.Name"></li>
+                    <li>Password <input type="password" name="user.Password" id="user.Password"></li>
+                    <li>Phone Number <input type="text" name="user.Phone" id="user.Phone"></li>
+                </fieldset>
+<!-- above code lets customer give username/password/phone #, and creates the ordering fourm -->
+                <fieldset> <legend> Drink Size </legend>
+                    <li><input type="radio" name="Drink.size" id="drink.small"> 
+                        <label for="drink.small">Small Drink</label></li>
+                    <li><input type="radio" name="Drink.size" id="drink.medium">
+                        <label for="drink.medium">Medium Drink</label></li>
+                    <li><input type="radio" name="Drink.size" id="drink.large">
+                        <label for="drink.large">Large Drink</label></li>
+                </fieldset>
+<!-- above code lets customer select the size of their drink -->
+                <fieldset> <legend> Drink </legend>
+                    <li><input type="radio" name="Drink.type" id="drink.coke">
+                        <label for="drink.coke">Coke</label></li>
+                    <li><input type="radio" name="Drink.type" id="drink.fanta">
+                        <label for="drink.fanta">Fanta</label></li>
+                    <li><input type="radio" name="Drink.type" id="drink.rootBeer">
+                        <label for="drink.rootBeer">Root Beer</label></li>
+                </fieldset>
+<!-- above code lets customer select what they would like to drink -->
+                <fieldset> <legend> Pizza Size </legend>
+                    <li><input type="radio" name="Pizza.size" id="Pizza.small">
+                        <label for="Pizza.small">Small Pizza</label></li>
+                    <li><input type="radio" name="Pizza.size" id="Pizza.medium">
+                        <label for="Pizza.medium">Medium Pizza</label></li>
+                    <li><input type="radio" name="Pizza.size" id="Pizza.large">
+                        <label for="Pizza.large">Large Pizza</label></li>
+                </fieldset>
+<!-- above code lets customer select the size of their pizza-->
+                <fieldset> <legend> Pizza Type</legend>
+                    <li><input type="radio" name="Pizza.type" id="Pizza.Cheese">
+                        <label for="Pizza.Cheese">Cheese Pizza</label></li>
+                    <li><input type="radio" name="Pizza.type" id="Pizza.Pepperoni">
+                        <label for="Pizza.Pepperoni">Pepperoni Pizza</label></li>
+                    <li><input type="radio" name="Pizza.type" id="Pizza.Hawaiian">
+                        <label for="Pizza.Hawaiian">Hawaiian Pizza</label></li>
+                </fieldset>
+<!-- above code lets customer select what pizza they would like -->
+                <fieldset> <legend> Special Instructions </legend>
+                    <li><textarea name="user.Request" id="user.Request" cols="35" rows="10"></textarea>
+                        <label for="user.Request">Special Instructions</label></li>
+                    <li><button type="submit" value="submit">Submit</button></li>
+                </fieldset>
+<!-- above code creates a special instruction box for delivery of the order-->
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
